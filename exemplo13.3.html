@@ -1,0 +1,33 @@
+<html>
+<Head>
+<meta charset="utf-8"/>
+<title>Estados</title>
+<script type=text/JavaScript">
+function evento(){
+var res=document.getElementById("optUF").value;
+aler("Muito Bem! Você escolheu o estado UF:"+res);
+}
+</script>
+</Head>
+<body>
+<h1>JavaScript - Array</h1>
+<form name="forml">
+<br>
+<script>
+var estados={AC:"Acre",AL:"Alagoas",AM:"Amazonas",
+AP:"Amapá" ,BA:"Bahia",CE:"Ceará",DF:"Distrito Federal",
+ES:"Espírito Santo",GO:"Goiás",MA:"Maranhão",MT:"Mato Grosso",
+MS:"Mato Grosso do Sul",MG:"Minas Gerais",PA:"Pará",
+PB:"Paraíba",PR:"Paraná",PE:"Pernambuco",PI:"Piauí",
+RJ:"Rio de Janeiro",RN:"Rio Grande do Norte",RO:"Rondônia",
+SE:"Sergipe",SP:"São Paulo",TO:"Tocantins"};
+document.write("<select name=UF id=optUF>");
+for(uf in estados){
+document.write("<option value="+uf+">"+estados[uf]+"</option>");
+}
+document.write("</select>");
+</script>
+<input type="button" value="ok" onclick="evento()"/>
+</form>
+</body>
+</html>
